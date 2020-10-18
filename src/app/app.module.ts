@@ -7,6 +7,8 @@ import { NavComponent } from './nav/nav.component';
 import { AngularBasicsComponent } from './angular-basics/angular-basics.component';
 import { OneWayDataBindingComponent } from './angular-basics/one-way-data-binding/one-way-data-binding.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TwoWayDataBindingComponent } from './angular-basics/two-way-data-binding/two-way-data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NavComponent,
     AngularBasicsComponent,
     OneWayDataBindingComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

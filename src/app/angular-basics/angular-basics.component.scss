@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    top: 10vh;
+    background-color: #666;
+
+    ul {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+
+        a {
+            color: #fff;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            color: #888;
+            cursor: pointer;
+        }
+    }
+}
+
+section {
+    padding: 20px;
+    margin-top: 15vh;
+}
