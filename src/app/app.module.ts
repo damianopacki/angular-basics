@@ -9,6 +9,8 @@ import { OneWayDataBindingComponent } from './angular-basics/one-way-data-bindin
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TwoWayDataBindingComponent } from './angular-basics/two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './angular-basics/directives/directives.component';
+import { ImportantMessageDirective } from './angular-basics/directives/important-message.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms';
     AngularBasicsComponent,
     OneWayDataBindingComponent,
     NotFoundComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    DirectivesComponent,
+    ImportantMessageDirective
   ],
   imports: [
     BrowserModule,

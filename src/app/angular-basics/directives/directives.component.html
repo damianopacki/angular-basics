@@ -1,0 +1,42 @@
+<h1>1. Dyrektywy strukturalne.</h1>
+<h3>np. *ngIf, *ngFor - charakterystyczna gwiazdka przed dyrektywą dająca nam znać o tym, że jest to dyrektywa strukturalna.</h3>
+<p>Dyrektywy strukturalne służą do manipulowania drzewem DOM, co oznacza, że za ich pomoca możesz modyfikować widoki swoich komponentów, np. pokazywać zawartość diva po kliknięciu w przycisk.</p>
+
+<p *ngIf="doesExist; else doesNotExist">chcemy wyświetlić treść jeśli doesExist = true</p>
+<ng-template #doesNotExist>Does not exist at the moment!</ng-template>
+<p *ngIf="!doesExist">Does not exist at the moment!</p>
+<p *ngIf="isOldEnough()">Możesz kupić alkohol</p>
+
+<h2>Zadanie: </h2>
+<h3>Przy pomocy dyrektywy sturkturalnej *ngFor wyświetl listę todo z pola klasy.</h3>
+
+<div>
+    <ul>
+        <li *ngFor="let todo of todos; let i = index">
+            Index of todo = {{ i }}, Todo title = {{ todo.title }}
+        </li>
+    </ul>
+</div>
+
+<h3>ngSwitch</h3>
+<ul [ngSwitch]="person">
+    <li *ngSwitchCase="'Jon'">Hello Jon</li>
+    <li *ngSwitchCase="'Bob'">Hello Bob</li>
+    <li *ngSwitchCase="'Maya'">Hello Maya</li>
+    <li *ngSwitchDefault>Bye bye</li>
+</ul>
+
+<h2>2. Dyrektywy atrybutów.</h2>
+
+<h3>[ngStyle]: </h3>
+<ul>
+    <li *ngFor="let todo of todos" [ngStyle]="{'background-color': todo.isDone ? 'green' : 'red'}">{{ todo.title }}</li>
+</ul>
+
+<h3 [appImportantMessage]>[ngClass]: </h3>
+<ul>
+    <li *ngFor="let todo of todos" [ngClass]="{'done': todo.isDone, 'todo': !todo.isDone}">
+        {{ todo.title }}
+    </li>
+</ul>
+
