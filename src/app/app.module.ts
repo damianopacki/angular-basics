@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { AngularBasicsComponent } from './angular-basics/angular-basics.component';
 import { OneWayDataBindingComponent } from './angular-basics/one-way-data-binding/one-way-data-binding.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     AngularBasicsComponent,
-    OneWayDataBindingComponent
+    OneWayDataBindingComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

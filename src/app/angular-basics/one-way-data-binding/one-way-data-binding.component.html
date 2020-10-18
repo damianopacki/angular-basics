@@ -1,3 +1,40 @@
-<p>one-way-data-binding works!</p>
+<h1>1. One way data binding.</h1>
 
-<h1>{{ title }}</h1>
+<h3>String interpolation</h3>
+
+<h4>Current title - {{ title }}</h4>
+
+<p>Interpolacja służy do wyświetlania w szablonie naszego komponentu (pliku html) zmiennych stworzonych w klasie tego komponentu (pliku ts). Do wyświetlania danych nalezy użyć podwójnych nawiasów klamrowych.</p>
+
+<hr>
+
+<h1>2. Property binding.</h1>
+
+<h3 [innerText]="title" [style.color]="color"></h3>
+<!-- <h3 innerText="{{ title }}"></h3> -->
+
+<h2>Zadanie: </h2>
+<h3>Za pomocą property binding stwórz diva, który będzie miał wymiary 100x100 i zielony background.</h3>
+
+<div [style.width]="divWidth" [style.height]="divHeight" [style.background-color]="'green'"></div>
+
+<h2>Zadanie:</h2>
+
+<h3>Za pomocą interpolacji tekstu wypisz w widoku sowje imię i wiek. Imię i wiek umieść w polach klasy.</h3>
+
+<p>My name: {{ name }}</p> <p>My age: {{ age }}</p>
+
+<hr>
+
+<h1>3. Event binding.</h1>
+<p>Łączenie zdarzeń to przypisywanie metod do określonych właściwości elementów html za pomocą nawiasów '()'.</p>
+
+<button (click)="clickListener()">Click!</button>
+
+<button (dblclick)="clickListener()">Click!</button>
+
+<h2>Zadanie: </h2>
+<h3>Stwórz w klasie pole, które będzie przechowywało liczbę. Stwórz button, który po kliknięciu będzie inkrementował stworzoną liczbę. Wyświetl przechowywaną liczbę w widoku.</h3>
+
+<p>Count: {{ countNumber }}</p>
+<button (click)="incrementListener()">Increment</button>
