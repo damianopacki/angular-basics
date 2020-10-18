@@ -11,6 +11,8 @@ import { TwoWayDataBindingComponent } from './angular-basics/two-way-data-bindin
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './angular-basics/directives/directives.component';
 import { ImportantMessageDirective } from './angular-basics/directives/important-message.directive';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoComponent } from './todo-list/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ImportantMessageDirective } from './angular-basics/directives/important
     NotFoundComponent,
     TwoWayDataBindingComponent,
     DirectivesComponent,
-    ImportantMessageDirective
+    ImportantMessageDirective,
+    TodoListComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

@@ -33,7 +33,7 @@
     <li *ngFor="let todo of todos" [ngStyle]="{'background-color': todo.isDone ? 'green' : 'red'}">{{ todo.title }}</li>
 </ul>
 
-<h3 [appImportantMessage]>[ngClass]: </h3>
+<h3 appImportantMessage>[ngClass]: </h3>
 <ul>
     <li *ngFor="let todo of todos" [ngClass]="{'done': todo.isDone, 'todo': !todo.isDone}">
         {{ todo.title }}

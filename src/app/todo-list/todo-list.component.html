@@ -1,0 +1,14 @@
+<div>
+    <input type="text" placeholder="add todo..." #addTodoInput>
+    <button (click)="addTodo(addTodoInput.value)">Dodaj</button>
+</div>
+
+<ul>
+    <app-todo 
+        *ngFor="let todo of todos" 
+        [todoInput]="todo"
+        (todoRemoved)="deleteTodo($event)"
+    ></app-todo>
+</ul>
+
+

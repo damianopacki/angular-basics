@@ -5,6 +5,7 @@ import { DirectivesComponent } from './angular-basics/directives/directives.comp
 import { OneWayDataBindingComponent } from './angular-basics/one-way-data-binding/one-way-data-binding.component';
 import { TwoWayDataBindingComponent } from './angular-basics/two-way-data-binding/two-way-data-binding.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'angular-basics', pathMatch: 'full'},
@@ -14,6 +15,7 @@ const routes: Routes = [
     {path: 'two-way-data-binding', component: TwoWayDataBindingComponent},
     {path: 'directives', component: DirectivesComponent},
   ]},
+  {path: 'todo-list', component: TodoListComponent},
   {path: '**', component: NotFoundComponent}
 ];
 

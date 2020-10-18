@@ -1,0 +1,7 @@
+<!-- <p>{{ todoInput.title }}</p> -->
+
+<div class="todo-ctn">
+    <input type="checkbox" [(ngModel)]="todoInput.isDone">
+    <p>{{ todoInput.title }}</p>
+    <button (click)="deleteTodo()">Usuń</button>
+</div>
